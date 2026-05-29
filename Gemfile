@@ -1,7 +1,4 @@
 source "https://rubygems.org"
 
-gem "jekyll", "~> 4.3"
 gem "github-pages", group: :jekyll_plugins
-gem "jekyll-feed"
-gem "jekyll-sitemap"
-gem "jekyll-seo-tag"
+gem "webrick"  # Ruby 3.x 需要，否则 jekyll serve 报错

@@ -1,0 +1,30 @@
+title: "马梓杭的GitHub主页"
+email: 2968703652@qq.com
+description: "欢迎来到我的GitHub Pages主页"
+baseurl: "" # 对于 USERNAME.github.io 仓库留空
+url: "https://mzhma-zihang.github.io"
+
+# 构建设置
+markdown: kramdown
+theme: minima
+plugins:
+  - jekyll-feed
+  - jekyll-sitemap
+  - jekyll-seo-tag
+
+# 分页
+paginate: 5
+paginate_path: "/page:num/"
+
+# 作者信息
+author:
+  name: "马梓杭"
+  email: "2968703652@qq.com"
+  github: "mzhma-zihang"
+
+# 排除文件
+exclude:
+  - Gemfile
+  - Gemfile.lock
+  - vendor/
+  - .github/

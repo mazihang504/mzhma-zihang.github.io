@@ -1,0 +1,67 @@
+---
+# 自定义 Jekyll/Minima 主题样式
+---
+
+@import "minima";
+
+// 自定义变量
+$brand-color:   #2a7ae2 !default;
+$brand-color-light: lighten($brand-color, 40%) !default;
+
+// 全局样式
+body {
+  font-family: "Helvetica Neue", Helvetica, Arial, "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", sans-serif;
+  line-height: 1.8;
+}
+
+// 标题样式
+.site-title {
+  font-weight: 700;
+  letter-spacing: -1px;
+}
+
+// 文章样式
+.post-title {
+  font-size: 2em;
+  color: #333;
+}
+
+.post-content h2 {
+  font-size: 1.8em;
+  border-bottom: 2px solid $brand-color;
+  padding-bottom: 0.3em;
+}
+
+// 代码块样式
+pre, code {
+  background-color: #f6f8fa;
+  border-radius: 4px;
+}
+
+// 表格样式
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 1em 0;
+  
+  th, td {
+    padding: 8px 12px;
+    border: 1px solid #e1e4e8;
+  }
+  
+  th {
+    background-color: #f6f8fa;
+    font-weight: 600;
+  }
+}
+
+// 响应式
+@media (max-width: 600px) {
+  .post-title {
+    font-size: 1.5em;
+  }
+  
+  table {
+    font-size: 0.9em;
+  }
+}
